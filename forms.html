@@ -1,0 +1,37 @@
+ <nav aria-label="Primary">
+<a href="text.html">Text</a>
+<a href="links.html">Links</a>
+<a href="lists.html">Lists</a>
+<a href="media.html">Media</a>
+<a href="table.html">Table</a>
+<a href="forms.html">Forms</a>
+</nav>
+<hr>
+ <section id="forms" aria-labelledby="forms-title">
+  <h2 id="forms-title">Contact Form</h2>
+  <form method="get" action="https://httpbin.org/get">
+    <fieldset>
+      <legend>Send a Message</legend>
+      <label for="name">Name</label>
+      <input id="name" name="name" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="role">Role</label>
+      <select id="role" name="role">
+        <option>Student</option>
+        <option>Staff</option>
+      </select>
+      <label>Subscribe</label>
+      <label><input type="radio" name="sub" value="yes"> Yes</label>
+      <label><input type="radio" name="sub" value="no"> No</label>
+      <label for="msg">Message</label>
+      <textarea id="msg" name="message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </fieldset>
+  </form>
+  <details>
+    <summary>Help</summary>
+    <p>We’ll reply in 1–2 working days.</p>
+  </details>
+ </section>
+ </hr>
